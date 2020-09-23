@@ -1,0 +1,9 @@
+<div class="info" >
+<!--    <div  *ngFor = "let item of dbService.category">-->
+<!--        <div class="info_item">{{item}}</div>-->
+<!--    </div>-->
+
+    <div class="info_item"> {{dbService.category}}</div>
+    <div *ngIf="dbService.producer !== ''" class="info_item"> {{dbService.producer}}</div>
+</div>
+

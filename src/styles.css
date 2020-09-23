@@ -1,1 +1,283 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+}
+
+.container {
+  max-width: 100%;
+  min-width: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  background: #333333;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+.find{
+  height: 40px;
+  align-self: center;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.form-control {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.card {
+  width: 100%;
+  color: white;
+  background: grey;
+  padding: 1rem;
+  border-radius: 5px;
+  border: #ccc;
+  margin: 0.7rem 0;
+}
+
+.card_small {
+  width: 105%;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background: grey;
+  border-radius: 4px;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  padding-right: 4px;
+}
+
+.blockMy{
+  width: 50%;
+}
+
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  margin: 1.2rem 0;
+}
+
+hr {
+  margin: .5rem 0;
+}
+
+* {box-sizing: border-box; }
+.flex-container {
+  background: white;
+  display: grid;
+  height: 100%;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background: grey;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 5px;
+//grid-template-columns: repeat(auto-fill, 600px) ;
+  grid-template-columns: 25% 1fr 1fr;
+  padding-top: 5px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 100%;
+}
+
+.a {
+  grid-column: 1 / 2;
+}
+.b {
+  grid-column: 2 / 5 ;
+}
+.c {
+  grid-column: 1 / 2 ;
+  grid-row: 2 ;
+}
+.d {
+  grid-column: 2 / 5 ;
+  grid-row: 2 ;
+}
+
+.e {
+  grid-column: 1 / 5;
+  grid-row: 3;
+}
+
+.f {
+  grid-column: 1 / 5;
+  grid-row: 4;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.filter{
+  background: #cccccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.search{
+  display: grid;
+  grid-template-columns: 70% 30%;
+//justify-content: start;
+  align-content: center;
+  font-size: large;
+//background: #cccccc;
+//border-radius: 5px;
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.input-search{
+  height: 40px;
+  font-size: 1rem;
+  align-content: center;
+  border-radius: 5px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  background: #dc3545;
+  color: #fff;
+
+ul {
+  display: flex;
+
+li.active a {
+  font-weight: bold;
+  color: #333333;
+  cursor: default;
+}
+}
+
+a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+h2{
+  font-size: 70px;
+}
+}
+
+.header{
+//background: #133f83;
+//background: #14266a;
+  background: #14264D;
+  align-content: center;
+//font-size: 1.5rem;
+  color: #cccccc;
+  padding: 5px;
+}
+
+
+html, body > app-root > div > div.app_main > div:nth-child(1) > app-left-panel > div > ul > div:nth-child(1) > a > div > div > span{
+//color: #14264D;
+
+span {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333333;
+}
+//div:hover {background: #14264D; color: #fff;}
+}
+html, body > app-root > div > div.app_main > div:nth-child(1) > app-left-panel > div > ul > div:nth-child(2) > div > div > span{
+//color: #14264D;
+  font-size: 18px;
+//div:hover {background: #14264D; color: #fff;}
+}
+
+html, body > app-root > div > div.app_main > div:nth-child(1) > app-left-panel > div > ul > div:nth-child(3) > div > div > span{
+//color: #14264D;
+  font-size: 18px;
+}
+html, body > app-root > div > div.app_main > div:nth-child(1) > app-left-panel > div > ul > div:nth-child(4) > div > div > span{
+//color: #14264D;
+  font-size: 18px;
+}
+html, body > app-root > div > div.app_main > div:nth-child(1) > app-left-panel > div > ul > div:nth-child(5) > div > div > span{
+//color: #14264D;
+  font-size: 18px;
+}
+
+html, body > app-root > div > div.app_main > div:nth-child(1) > app-left-panel > div > ul > div:nth-child(6) > div > div > span{
+//color: #14264D;
+  font-size: 18px;
+}
+

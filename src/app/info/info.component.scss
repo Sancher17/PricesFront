@@ -1,0 +1,22 @@
+.info{
+  //display: grid;
+  //grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  //grid-auto-rows: auto;
+  //grid-gap: 10px;
+
+  display: flex;
+  margin: 15px;
+  padding: 15px;
+}
+
+.info_item {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background: grey;
+  border-radius: 4px;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  padding-right: 4px;
+}

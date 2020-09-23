@@ -1,0 +1,41 @@
+.filter-category{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, auto));
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+}
+
+.filter-item{
+  display: inline-block;
+  padding: 5px;
+}
+
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-form-field {
+  margin-right: 12px;
+}
+
+
+.filter_header {
+  display: block;
+  color: grey;
+  font-size: 20px;
+  font-weight: bold;
+  background: white;
+  border-radius: 4px;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  padding-right: 4px;
+}
+

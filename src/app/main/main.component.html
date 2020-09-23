@@ -1,0 +1,119 @@
+<div class="main_grid" *ngIf="mainService.showMain">
+    <!--    item 1-->
+    <div class="main-item main_grid_item">
+        <div *ngFor="let item of dbService.baseEntities">
+            <div class="main_item">
+                <div class="main_img">
+                    img
+                </div>
+                <div class="main_text">
+                    <a class="link" [routerLink]="['/', dbService.category, item.id]">
+                        <h2> {{item.model}} </h2>
+                    </a>
+                    <p> {{item.category}} </p>
+                    <p> {{item.source}} </p>
+                </div>
+                <div>
+                    <h4>от {{item.price}} руб</h4>
+                </div>
+            </div>
+        </div>
+        <app-paginator>Пагинация</app-paginator>
+        <div>
+
+        </div>
+        <!--            <div>-->
+        <!--                <nz-pagination-->
+        <!--                        [nzPageIndex]="dbService.page"-->
+        <!--                        [nzTotal]="dbService.length"-->
+        <!--                        nzShowSizeChanger-->
+        <!--                        [nzPageSizeOptions] = "dbService.pageSizeOptions"-->
+        <!--                        (nzPageIndexChange)="pageIndex($event)"-->
+        <!--                        (nzPageSizeChange)="pageSize($event)"-->
+        <!--                >-->
+        <!--                </nz-pagination>-->
+        <!--            </div>-->
+    </div>
+
+    <!--    <div>-->
+    <!--        <div class="table-operations">-->
+    <!--            <button nz-button (click)="sort('age', 'descend')">Sort age</button>-->
+    <!--            <button nz-button (click)="resetFilters()">Clear filters</button>-->
+    <!--            <button nz-button (click)="resetSortAndFilters()">Clear filters and sorters</button>-->
+    <!--        </div>-->
+    <!--        <nz-table class="my_table"#filterTable [nzData]="listOfDisplayData">-->
+    <!--            <thead class="my_table">-->
+    <!--            <tr class="my_table">-->
+    <!--                <th class="my_table"-->
+    <!--                        nzShowSort-->
+    <!--                        nzShowFilter-->
+    <!--                        [(nzSort)]="mapOfSort.name"-->
+    <!--                        (nzSortChange)="sort('name', $event)"-->
+    <!--                        [nzFilters]="listOfFilterName"-->
+    <!--                        (nzFilterChange)="search($event, listOfSearchAddress)"-->
+    <!--                >-->
+    <!--                    Name-->
+    <!--                </th>-->
+    <!--                <th nzShowSort [(nzSort)]="mapOfSort.age" (nzSortChange)="sort('age', $event)">Age</th>-->
+    <!--                <th-->
+    <!--                        nzShowSort-->
+    <!--                        nzShowFilter-->
+    <!--                        [(nzSort)]="mapOfSort.price"-->
+    <!--                        (nzSortChange)="sort('price', $event)"-->
+    <!--                        [nzFilters]="listOfFilterAddress"-->
+    <!--                        (nzFilterChange)="search(listOfSearchName, $event)"-->
+    <!--                >-->
+    <!--                    Цена-->
+    <!--                </th>-->
+    <!--            </tr>-->
+    <!--            </thead>-->
+    <!--            <tbody>-->
+    <!--            <tr *ngFor="let data of dbService.baseEntities">-->
+    <!--                <td class="td_img">img</td>-->
+    <!--                <td>-->
+    <!--                    <div style="font-size: medium"> {{data.model }}</div>-->
+    <!--                    <div> {{data.linkDetailInfo}}</div>-->
+    <!--                    <div> {{data.source}}</div>-->
+    <!--                </td>-->
+    <!--                <td>{{ data.price }}</td>-->
+    <!--                <td>{{ data.category }}</td>-->
+    <!--            </tr>-->
+    <!--            </tbody>-->
+    <!--        </nz-table>-->
+    <!--    </div>-->
+
+    <!--    <div>-->
+    <!--        <nz-table nzShowPagination="false" #basicTable [nzData]="dbService.baseEntities">-->
+    <!--            <tbody>-->
+    <!--            <tr *ngFor="let data of basicTable.data">-->
+    <!--                <td class="main_img">-->
+    <!--                    <div>img</div>-->
+    <!--                </td>-->
+    <!--                <td class="td_text">-->
+    <!--                    <div>-->
+    <!--                        {{data.model}}-->
+    <!--                        {{data.source}}-->
+    <!--                    </div>-->
+    <!--                </td>-->
+    <!--                <td>{{ data.price }}</td>-->
+    <!--            </tr>-->
+    <!--            </tbody>-->
+    <!--        </nz-table>-->
+    <!--        <nz-pagination-->
+    <!--                [nzPageIndex]="dbService.page"-->
+    <!--                [nzTotal]="dbService.length"-->
+    <!--                nzShowSizeChanger-->
+    <!--                [nzPageSizeOptions] = "dbService.pageSizeOptions"-->
+    <!--                (nzPageIndexChange)="pageIndex($event)"-->
+    <!--                (nzPageSizeChange)="pageSize($event)"-->
+    <!--        >-->
+    <!--        </nz-pagination>-->
+    <!--    </div>-->
+
+    <!--    item 2-->
+    <div class="main-item main_grid_item">MAIN 2
+
+    </div>
+
+
+</div>

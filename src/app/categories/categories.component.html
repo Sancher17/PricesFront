@@ -1,0 +1,24 @@
+<div class="categories">
+    <!--    <button class="categories_card" *ngFor="let category of filterService.filtersCategory"-->
+    <!--            (click)="onClick(category.nameEng)">-->
+    <!--        <div class="categories_a" >-->
+    <!--            <div class="category_img"> img</div>-->
+    <!--            <div class="category_title">{{category.nameRus}} </div>-->
+    <!--        </div>-->
+    <!--    </button>-->
+</div>
+<div class="categories">
+
+    <div *ngFor="let category of filterService.filtersCategory">
+        <a [routerLink]="category.nameEng">
+            <div (click)="onClick(category.nameEng)">
+                <nz-card nzHoverable class="nz-card-style" [nzCover]="coverTemplate">
+                    <nz-card-meta nzTitle="{{category.nameRus}}"></nz-card-meta>
+                </nz-card>
+                <ng-template class="img_wrap" #coverTemplate>
+                    <img class="cat_img" alt="example" src="{{category.img}}"/>
+                </ng-template>
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+
+<!--ИТЕМЫ КАТЕГОРИИ-->
+<div *ngFor="let item of dbService.baseEntities">
+    <div class="main_item">
+        <div class="main_img">
+            img
+        </div>
+        <div class="main_text">
+            <a class="link" [routerLink]="['/', dbService.category, item.id]">
+                <h2> {{item.model}} </h2>
+            </a>
+            <p> {{item.category}} </p>
+            <p> {{item.source}} </p>
+        </div>
+        <div>
+            <h4>от {{item.price}} руб</h4>
+        </div>
+    </div>
+</div>
+
+<!-- ПАГИНАЦИЯ -->
+<app-paginator>Пагинация</app-paginator>

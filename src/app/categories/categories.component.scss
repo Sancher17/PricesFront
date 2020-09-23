@@ -1,0 +1,47 @@
+.categories{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 178px);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.categories_card{
+  width: 100%;
+  color: white;
+  background: grey;
+  border-radius: 5px;
+  border: #ccc;
+  padding: 10px;
+  font-size: medium;
+  a {
+    color: #fff;
+  }
+}
+.category_img{
+  display: block;
+  //height: 200px;
+  //width: 200px;
+  background: #333333;
+
+}
+
+.category_title{
+  text-align: center;
+}
+.nz-card-style{
+  height: 235px;
+  width: 172px
+}
+.img_wrap{
+  justify-items: center;
+  .ant-card-cover {
+    justify-items: center;
+    img{
+      justify-items: center;
+    }
+  }
+}
+.cat_img{
+  height: 180px;
+  width: 170px
+}

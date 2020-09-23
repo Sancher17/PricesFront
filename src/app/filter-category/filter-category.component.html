@@ -1,0 +1,48 @@
+<mat-accordion class="example-headers-align">
+<!--    panel 1-->
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" >
+        <mat-expansion-panel-header>
+            <mat-panel-title class="filter_header">
+                Выберите категорию товара
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="filter-category">
+            <div *ngFor = "let item of filterService.filtersCategory">
+                <button class="card_small" (click)="onClick(item.nameEng)">
+                    {{item.nameRus}}</button>
+            </div>
+        </div>
+    </mat-expansion-panel>
+    <!--    panel 3-->
+    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" >
+        <mat-expansion-panel-header>
+            <mat-panel-title class="filter_header">Производитель</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="filter-category">
+            <div *ngFor = "let producer of filterService.producers">
+                <button class="card_small" (click)="onClickProducer(producer.name)">{{producer.name}}</button>
+            </div>
+        </div>
+    </mat-expansion-panel>
+
+<!--    panel 2-->
+    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" >
+        <mat-expansion-panel-header>
+            <mat-panel-title class="filter_header"> Характеристики </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="filter-category">
+            <div *ngFor = "let item of filterService.characteristics">
+                <div class="card_small">{{item.name}}</div>
+            </div>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+
+<div style = "text-align: center">
+    <button class="btn find" (click)="onClickFind()">
+        <h2 >НАЙТИ</h2>
+    </button>
+</div>

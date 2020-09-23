@@ -1,0 +1,23 @@
+
+<div>
+    <div>
+        <app-info *ngIf="homeService.showInfo"></app-info>
+    </div>
+    <div>
+        <app-filter-category *ngIf="homeService.showFilter"></app-filter-category>
+    </div>
+
+    <div class="home_main">
+        <div>
+            <div>
+                <app-categories *ngIf="homeService.showCategories"></app-categories>
+            </div>
+            <div>
+                <app-main *ngIf="homeService.showMain"></app-main>
+            </div>
+            <div>
+                <app-product *ngIf="homeService.showProduct"></app-product>
+            </div>
+        </div>
+    </div>
+</div>
